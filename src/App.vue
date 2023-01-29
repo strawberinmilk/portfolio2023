@@ -55,13 +55,12 @@ export default defineComponent({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin: 0;
 }
 
 #header {
   color: #ffffff;
-  background-color: #ff00ff;
+  background-color: #89a0f8;
   position: fixed;
   width: 100%;
   top: 0px;
@@ -79,6 +78,6 @@ export default defineComponent({
   position: fixed;
   top: constants.$HEADER_HEIGHT;
   height: 10px;
-  background-color: #ffffff;
+  background-color: #c7fad5;
 }
 </style>
