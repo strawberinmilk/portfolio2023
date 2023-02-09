@@ -28,5 +28,9 @@ export default defineComponent({
   transform: translateY(-50%) translateX(-50%);
   width: 70%;
   background-color: #62f6c5;
+  border: dashed 2px #ffffff;
+  border-left: 5px solid #ffa9ff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 </style>

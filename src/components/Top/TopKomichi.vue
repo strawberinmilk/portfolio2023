@@ -3,7 +3,7 @@
     <div :id="$style.inner">
       <h3>小路綾bot</h3>
       <el-row>
-        <el-col :span="12">
+        <el-col :span="0" :sm="12">
           <a
             class="twitter-timeline"
             data-height="500"
@@ -12,7 +12,13 @@
             >Tweets by komichiAyaBot</a
           >
         </el-col>
-        <el-col :span="12">
+        <el-col :span="24" :sm="12">
+          <a
+            href="https://twitter.com/komichiayabot?ref_src=twsrc%5Etfw"
+            class="twitter-follow-button"
+            data-show-count="false"
+            >Follow @komichiayabot</a
+          >
           <p>小路綾とは、"きんいろモザイク"という漫画、アニメの登場人物。</p>
           <p>その小路綾の発言を形態素解析し、マルコフ連鎖により小路綾らしい発言を生成する。</p>
           <p>
@@ -26,10 +32,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, reactive } from 'vue';
 
 export default defineComponent({
   name: 'TopKomichi',
+  setup() {
+    const state = reactive({
+      width: window.innerWidth,
+    });
+    return {
+      state,
+    };
+  },
   mounted() {
     setTimeout(() => {
       const tweetScript = document.createElement('script');
@@ -55,5 +69,9 @@ export default defineComponent({
   transform: translateY(-50%) translateX(-50%);
   width: 70%;
   background-color: #a260bf;
+  border: dashed 2px #ffffff;
+  border-left: 5px solid #ffa9ff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 </style>

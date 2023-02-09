@@ -2,19 +2,17 @@
   <el-page-header :id="$style.header" :icon="null">
     <template #title>
       <router-link to="/">
-        <span>ページタイトル</span>
+        <span>rin;</span>
       </router-link>
     </template>
     <template #icon>
       <div :id="$style.headerHeight"></div>
     </template>
     <template #content>
-      <span> コンテンツ1 </span>
-      <span> コンテンツ2 </span>
-      <span> コンテンツ3 </span>
-    </template>
-    <template #extra>
-      <span>右側</span>
+      <a href="/#about">about</a>
+      <a href="/#komichi">小路綾bot</a>
+      <a href="/#qualification">資格</a>
+      <a href="/#links">リンク</a>
     </template>
   </el-page-header>
   <div :id="$style.headerHeightKeep"></div>
@@ -41,7 +39,7 @@ export default defineComponent({
         end: 'bottom center',
         toggleActions: 'play reverse play reverse',
         scrub: true,
-        markers: true,
+        //markers: true,
       },
     });
   },
@@ -64,10 +62,14 @@ export default defineComponent({
   position: fixed;
   width: 100%;
   top: 0px;
+  z-index: 1023;
   #headerHeight {
     height: constants.$HEADER_HEIGHT;
     width: 0px;
     /*headerは一番heightの大きいもののサイズで上下中央寄せされるよ*/
+  }
+  a {
+    padding-left: 10px;
   }
 }
 #headerHeightKeep {

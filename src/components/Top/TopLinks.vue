@@ -3,7 +3,7 @@
     <div :id="$style.inner">
       <h3>links</h3>
       <el-row>
-        <el-col id="twitter" :span="12">
+        <el-col id="twitter" :span="0" :sm="12">
           Twitter
           <a
             class="twitter-timeline"
@@ -13,7 +13,13 @@
             >Tweets by strawbeRinMilk</a
           >
         </el-col>
-        <el-col :span="12">
+        <el-col :span="24" :sm="12">
+          <a
+            href="https://twitter.com/strawberinmilk?ref_src=twsrc%5Etfw"
+            class="twitter-follow-button"
+            data-show-count="false"
+            >Follow @strawberinmilk</a
+          >
           <p>
             <a href="https://github.com/strawberinmilk">
               <img :id="$style.githubImg" src="/github.png" />
@@ -59,6 +65,10 @@ export default defineComponent({
   transform: translateY(-50%) translateX(-50%);
   width: 70%;
   background-color: #6ba7ff;
+  border: dashed 2px #ffffff;
+  border-left: 5px solid #ffa9ff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 #githubImg {
