@@ -7338,7 +7338,19 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^3.2.13:
+vue-tweet-embed@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/vue-tweet-embed/-/vue-tweet-embed-2.4.0.tgz#8707efd49b519fd2201200ea1ba68881c35d886d"
+  integrity sha512-bjViatv0priR1dTEPJpRyWigWGUTUC28VT/sWTaZE+RBWuj/XZvOU5Hzk+O8Mue2dBCAHJrRpoO1VKlcgmHohg==
+
+vue-tweet@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/vue-tweet/-/vue-tweet-2.0.2.tgz#b49f872d25515ca5d56dd545d99d8e3f086e2de3"
+  integrity sha512-a1tmxnOcL8MrBJBiCzoFw8njpaoVWc0pkuaBnEBKs7kdmr5qKjHlSMhjoukPPSLENPjPnRjrJnKEcu0D8+bXNw==
+  dependencies:
+    vue "^3.2.36"
+
+vue@^3.2.13, vue@^3.2.36:
   version "3.2.45"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.45.tgz#94a116784447eb7dbd892167784619fef379b3c8"
   integrity sha512-9Nx/Mg2b2xWlXykmCwiTUCWHbWIj53bnkizBxKai1g61f2Xit700A1ljowpTIM11e3uipOeiPcSqnmBg6gyiaA==
