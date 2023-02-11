@@ -5,13 +5,13 @@ on:
     branches: [main]
     types: [closed]
     paths:
-      - '/**'
+      - '/*'
       - '!.gitignore'
       - '!README.md'
 
 defaults:
   run:
-    working-directory: vue
+    working-directory: ./
 
 jobs:
   build:

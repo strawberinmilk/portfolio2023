@@ -1,0 +1,9 @@
+name: test-workflow
+on: push
+jobs:
+  build:
+    name: Greeting
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Hello World
+        run: echo "Hello World"
