@@ -4,14 +4,10 @@ on:
   pull_request:
     branches: [main]
     types: [closed]
-    paths:
-      - '/*'
-      - '!.gitignore'
-      - '!README.md'
 
 defaults:
   run:
-    working-directory: ./
+    working-directory: /
 
 jobs:
   build:
